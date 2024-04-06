@@ -4,20 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>C语言轻量级单元测试 | JMing&#39;s Blog</title>
+  <title>MacOS使用ssh密钥连接远程服务器 | JMing&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="minunit暂无">
+  <meta name="description" content="一、在本地生成密钥1ssh-keygen -t rsa   一路回车就行了，ssh-keygen 在 MacOS 下会把密钥生成在 &#x2F;User&#x2F;用户名&#x2F;.ssh 下  二、将公钥拷贝到服务器上1ssh-copy-id -i &#x2F;User&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub root@ip   执行以上命令会要求验证，输入服务器密码就行了  三、连接1ssh root@ip   可以愉快的使用了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言轻量级单元测试">
-<meta property="og:url" content="https://jm7603.github.io/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:title" content="MacOS使用ssh密钥连接远程服务器">
+<meta property="og:url" content="https://jm7603.github.io/%E5%85%B6%E4%BB%96/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/0981664a56f1">
 <meta property="og:site_name" content="JMing&#39;s Blog">
-<meta property="og:description" content="minunit暂无">
+<meta property="og:description" content="一、在本地生成密钥1ssh-keygen -t rsa   一路回车就行了，ssh-keygen 在 MacOS 下会把密钥生成在 &#x2F;User&#x2F;用户名&#x2F;.ssh 下  二、将公钥拷贝到服务器上1ssh-copy-id -i &#x2F;User&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub root@ip   执行以上命令会要求验证，输入服务器密码就行了  三、连接1ssh root@ip   可以愉快的使用了">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-04-02T04:37:45.000Z">
-<meta property="article:modified_time" content="2024-04-06T13:57:33.616Z">
+<meta property="article:published_time" content="2024-04-06T13:55:39.000Z">
+<meta property="article:modified_time" content="2024-04-06T13:58:12.603Z">
 <meta property="article:author" content="JMing">
-<meta property="article:tag" content="C语言">
-<meta property="article:tag" content="单元测试">
+<meta property="article:tag" content="ssh">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="JMing's Blog" type="application/atom+xml">
@@ -77,14 +76,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-C语言轻量级单元测试" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-MacOS使用ssh密钥连接远程服务器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" class="article-date">
-  <time class="dt-published" datetime="2024-04-02T04:37:45.000Z" itemprop="datePublished">2024-04-02</time>
+    <a href="/%E5%85%B6%E4%BB%96/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/0981664a56f1" class="article-date">
+  <time class="dt-published" datetime="2024-04-06T13:55:39.000Z" itemprop="datePublished">2024-04-06</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/C%E8%AF%AD%E8%A8%80/">C语言</a>
+    <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a>
   </div>
 
   </div>
@@ -95,7 +94,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      C语言轻量级单元测试
+      MacOS使用ssh密钥连接远程服务器
     </h1>
   
 
@@ -103,16 +102,30 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="minunit"><a href="#minunit" class="headerlink" title="minunit"></a>minunit</h2><p>暂无</p>
+        <h2 id="一、在本地生成密钥"><a href="#一、在本地生成密钥" class="headerlink" title="一、在本地生成密钥"></a>一、在本地生成密钥</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一路回车就行了，ssh-keygen 在 MacOS 下会把密钥生成在 <code>/User/用户名/.ssh</code> 下</p>
+</blockquote>
+<h2 id="二、将公钥拷贝到服务器上"><a href="#二、将公钥拷贝到服务器上" class="headerlink" title="二、将公钥拷贝到服务器上"></a>二、将公钥拷贝到服务器上</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i /User/用户名/.ssh/id_rsa.pub root@ip</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>执行以上命令会要求验证，输入服务器密码就行了</p>
+</blockquote>
+<h2 id="三、连接"><a href="#三、连接" class="headerlink" title="三、连接"></a>三、连接</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@ip</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>可以愉快的使用了</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jm7603.github.io/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" data-id="cluo5umk70000fur80ji33vxo" data-title="C语言轻量级单元测试" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://jm7603.github.io/%E5%85%B6%E4%BB%96/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/0981664a56f1" data-id="cluo6j6af0001tfr8ewqrauu0" data-title="MacOS使用ssh密钥连接远程服务器" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" rel="tag">单元测试</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
 
     </footer>
   </div>
@@ -120,19 +133,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2024/04/06/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          MacOS使用ssh密钥连接远程服务器
-        
-      </div>
-    </a>
   
-  
-    <a href="/2024/04/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/C%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/d553fbcb363f" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">C语言轻量级单元测试</div>
     </a>
   
 </nav>
@@ -191,15 +195,15 @@
       <ul>
         
           <li>
-            <a href="/2024/04/06/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/">MacOS使用ssh密钥连接远程服务器</a>
+            <a href="/%E5%85%B6%E4%BB%96/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/0981664a56f1">MacOS使用ssh密钥连接远程服务器</a>
           </li>
         
           <li>
-            <a href="/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">C语言轻量级单元测试</a>
+            <a href="/C%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/d553fbcb363f">C语言轻量级单元测试</a>
           </li>
         
           <li>
-            <a href="/2024/04/02/hello-world/">Hello World</a>
+            <a href="/uncategorized/hello-world/31284834e87b">Hello World</a>
           </li>
         
       </ul>

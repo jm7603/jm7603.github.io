@@ -75,6 +75,65 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-MacOS使用ssh密钥连接远程服务器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/04/06/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="article-date">
+  <time class="dt-published" datetime="2024-04-06T13:55:39.000Z" itemprop="datePublished">2024-04-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/04/06/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/">MacOS使用ssh密钥连接远程服务器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="一、在本地生成密钥"><a href="#一、在本地生成密钥" class="headerlink" title="一、在本地生成密钥"></a>一、在本地生成密钥</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一路回车就行了，ssh-keygen 在 MacOS 下会把密钥生成在 <code>/User/用户名/.ssh</code> 下</p>
+</blockquote>
+<h2 id="二、将公钥拷贝到服务器上"><a href="#二、将公钥拷贝到服务器上" class="headerlink" title="二、将公钥拷贝到服务器上"></a>二、将公钥拷贝到服务器上</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i /User/用户名/.ssh/id_rsa.pub root@ip</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>执行以上命令会要求验证，输入服务器密码就行了</p>
+</blockquote>
+<h2 id="三、连接"><a href="#三、连接" class="headerlink" title="三、连接"></a>三、连接</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@ip</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>可以愉快的使用了</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jm7603.github.io/2024/04/06/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-id="cluo5umk90001fur8c6117zip" data-title="MacOS使用ssh密钥连接远程服务器" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-C语言轻量级单元测试" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" class="article-date">
@@ -101,12 +160,12 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="C语言轻量级单元测试工具minunit"><a href="#C语言轻量级单元测试工具minunit" class="headerlink" title="C语言轻量级单元测试工具minunit"></a>C语言轻量级单元测试工具minunit</h1><p>暂定</p>
+        <h2 id="minunit"><a href="#minunit" class="headerlink" title="minunit"></a>minunit</h2><p>暂无</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jm7603.github.io/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" data-id="cluo04fuv0000e7r82zqg2an2" data-title="C语言轻量级单元测试" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://jm7603.github.io/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" data-id="cluo5umk70000fur80ji33vxo" data-title="C语言轻量级单元测试" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -159,7 +218,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jm7603.github.io/2024/04/02/hello-world/" data-id="cluo04fv00007e7r8fev1hnkn" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://jm7603.github.io/2024/04/02/hello-world/" data-id="cluo5umkb0004fur829wf69o2" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -181,7 +240,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C%E8%AF%AD%E8%A8%80/">C语言</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C%E8%AF%AD%E8%A8%80/">C语言</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></li></ul>
     </div>
   </div>
 
@@ -191,7 +250,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" rel="tag">单元测试</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" rel="tag">单元测试</a></li></ul>
     </div>
   </div>
 
@@ -201,7 +260,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">C语言</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">单元测试</a>
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">C语言</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">单元测试</a>
     </div>
   </div>
 
@@ -221,6 +280,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/04/06/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/">MacOS使用ssh密钥连接远程服务器</a>
+          </li>
         
           <li>
             <a href="/2024/04/02/C%E8%AF%AD%E8%A8%80%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">C语言轻量级单元测试</a>

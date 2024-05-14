@@ -22,7 +22,7 @@
     <meta name="description" content="法王的个人记录日常（非专业）">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JMing&#39;s Blog">
-<meta property="og:url" content="https://jm7603.github.io/tags/JavaSE/index.html">
+<meta property="og:url" content="https://jm7603.github.io/tags/%E5%BC%95%E7%94%A8/index.html">
 <meta property="og:site_name" content="JMing&#39;s Blog">
 <meta property="og:description" content="法王的个人记录日常（非专业）">
 <meta property="og:locale" content="zh_CN">
@@ -444,36 +444,41 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/JavaSE/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3/50cef68448ad/">
+            <a class="abstract-title" href="/CPP/CPP%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8%EF%BC%88%E5%85%A5%E9%97%A8%EF%BC%89/58b51aa954b6/">
                 
-                <span class="abstract-title-text">Java中的注解</span>
+                <span class="abstract-title-text">C++中的引用（入门）</span>
             </a>
             <div class="abstract-content">
-                
-部分资料来源：http://c.biancheng.net。
+                C++中的引用是什么主要是用来解决指针太麻烦的问题而设计的一种新的语法格式，本质上是指针常量。
+相较于指针的优缺点
+优点：避免指针的麻烦写法
+缺点：无法改变引用的指向、必须声明时初始化
 
-一、注解的概念从 jdk 1.5 之后可以在源代码中嵌入一些补充信息，这种补充信息称为注解（Annotation）。注解并不能改变程序的运行结果，也不会影响程序运行的性能。有些注解可以在编译时给用户提示或警告，有的注解可以在运行时读写字节码文件信息。
-二、注解的作用
-生成帮助文档。这是最常见的，也是 Java 最早提供的注解。常用的有 @see、@param 和 @return 等；
-跟踪代码依赖性，实现替代配置文件功能。比较常见的是 Spring 2.5 开始的基于注解配置。作用就是减少配置。现在的框架基本都使用了这种配...
+使用引用引用的语法格式数据类型 &amp;引用名 &#x3D; 原变量;
+12int a = 3;int &amp;ra = a; // 相当于 const int *ra = a;
+
+引用的特点
+必须在声明的同时初始化
+
+123int a = 3;int &amp;ra; 			// ❌ declaration of reference variable &#x27;ra&#x27; requires...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/09">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/04/09</span>
+                <div class="abstract-date" title="Last updated: 2024/05/14">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/14</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Java">Java</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="CPP">CPP</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="JavaSE">JavaSE</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="注解">注解</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="引用">引用</a>
     
 </div>
 

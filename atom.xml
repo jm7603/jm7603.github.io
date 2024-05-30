@@ -6,7 +6,7 @@
   <link href="https://jm7603.github.io/atom.xml" rel="self"/>
   
   <link href="https://jm7603.github.io/"/>
-  <updated>2024-05-20T12:07:23.807Z</updated>
+  <updated>2024-05-30T14:03:35.833Z</updated>
   <id>https://jm7603.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vector和iterator</title>
+    <link href="https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/"/>
+    <id>https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/</id>
+    <published>2024-05-30T14:02:39.000Z</published>
+    <updated>2024-05-30T14:03:35.833Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="更新预告"><a href="#更新预告" class="headerlink" title="更新预告"></a>更新预告</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;更新预告&quot;&gt;&lt;a href=&quot;#更新预告&quot; class=&quot;headerlink&quot; title=&quot;更新预告&quot;&gt;&lt;/a&gt;更新预告&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="CPP" scheme="https://jm7603.github.io/categories/CPP/"/>
+    
+    
+    <category term="CPP" scheme="https://jm7603.github.io/tags/CPP/"/>
+    
+    <category term="C++" scheme="https://jm7603.github.io/tags/C/"/>
+    
+    <category term="迭代器" scheme="https://jm7603.github.io/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>C++中的命名空间</title>

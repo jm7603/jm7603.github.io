@@ -19,25 +19,24 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="法王的个人记录日常（非专业）">
-    <meta name="description" content="更新预告">
+    <meta name="description" content="一、vim 命令常用选项 查看 vim 版本、配置文件位置及编译信息  1vim --version   打开或新编辑  123vim             # 直接开始编辑(保存文件时需指定文件名)vim &lt;filename&gt;  # 打开已有文件或为新文件指定文件名(文件未保存时文件还不存在)vim &lt;filelist&gt;  # 打开多个文件   打开 vim 使用教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vector和iterator">
-<meta property="og:url" content="https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/index.html">
+<meta property="og:title" content="vim快速入门">
+<meta property="og:url" content="https://jm7603.github.io/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/index.html">
 <meta property="og:site_name" content="JMing&#39;s Blog">
-<meta property="og:description" content="更新预告">
+<meta property="og:description" content="一、vim 命令常用选项 查看 vim 版本、配置文件位置及编译信息  1vim --version   打开或新编辑  123vim             # 直接开始编辑(保存文件时需指定文件名)vim &lt;filename&gt;  # 打开已有文件或为新文件指定文件名(文件未保存时文件还不存在)vim &lt;filelist&gt;  # 打开多个文件   打开 vim 使用教程">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-05-30T14:02:39.000Z">
-<meta property="article:modified_time" content="2024-05-30T14:03:35.833Z">
+<meta property="article:published_time" content="2024-07-06T13:28:12.000Z">
+<meta property="article:modified_time" content="2024-07-06T13:30:39.834Z">
 <meta property="article:author" content="JMing">
-<meta property="article:tag" content="CPP">
-<meta property="article:tag" content="C++">
-<meta property="article:tag" content="迭代器">
+<meta property="article:tag" content="vim">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
-    <title>vector和iterator · JMing&#39;s blog</title>
+    <title>vim快速入门 · JMing&#39;s blog</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -277,7 +276,7 @@
                 <a href="/">JMing&#39;s Blog</a>
             </div>
             <div class="post-title header-element">
-                <a href="#" class="post-name">vector和iterator</a>
+                <a href="#" class="post-name">vim快速入门</a>
             </div>
         </div>
     
@@ -323,7 +322,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                vector和iterator
+                vim快速入门
             <!-- 404 -->
             
         </h1>
@@ -343,11 +342,9 @@
                     <div class= post-intro-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="CPP">CPP</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="vim">vim</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="迭代器">迭代器</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="linux">linux</a>
     
 </div>
 
@@ -355,13 +352,13 @@
                 <!-- 文章字数统计 -->
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">4</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.7k</span>阅读时长: <span class="post-count reading-time">6 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2024/05/30</span>
+                    <span class="post-intro-time">2024/07/06</span>
                     <!-- busuanzi -->
                     
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
@@ -516,15 +513,180 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h2 id="更新预告"><a href="#更新预告" class="headerlink" title="更新预告"></a>更新预告</h2>
+        <h2 id="一、vim-命令常用选项"><a href="#一、vim-命令常用选项" class="headerlink" title="一、vim 命令常用选项"></a>一、vim 命令常用选项</h2><ul>
+<li>查看 <code>vim</code> 版本、配置文件位置及编译信息</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim --version</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>打开或新编辑</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim             # 直接开始编辑(保存文件时需指定文件名)</span><br><span class="line">vim &lt;filename&gt;  # 打开已有文件或为新文件指定文件名(文件未保存时文件还不存在)</span><br><span class="line">vim &lt;filelist&gt;  # 打开多个文件</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>打开 <code>vim</code> 使用教程</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vimtutor</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、vim-的几种模式"><a href="#二、vim-的几种模式" class="headerlink" title="二、vim 的几种模式"></a>二、vim 的几种模式</h2><ul>
+<li><strong>命令模式(Command mode)</strong>: 进入 <code>vim</code> 编辑器默认为此模式, 在该模式下, 键入的字符会被识别为命令</li>
+<li><strong>插入模式(Insert mode)</strong>: 插入模式可以像其他编辑器一样插入字符, 进入插入模式底部会显示 <code>-- INSERT --</code></li>
+<li><strong>底线模式(Last line mode)</strong>: 在命令模式下键入 <code>:</code> 进入底线命令模式, 会在最底部出现 <code>:</code>, 此时可以输入行命令</li>
+<li><strong>视图模式(Visual mode)</strong>: 命令模式下键入 <code>v</code> 进入视图模式, 进入视图模式底部会显示 <code>-- VISUAL --</code>, 在此模式下可以移动光标对文本进行选中, 可以对选中的文本进行命令操作</li>
+</ul>
+<h2 id="三、vim-的基本使用"><a href="#三、vim-的基本使用" class="headerlink" title="三、vim 的基本使用"></a>三、vim 的基本使用</h2><blockquote>
+<p>以下，<code>&lt;filename&gt;</code> 代表文件名, <code>&lt;text&gt;</code> 代表文本, <code>&lt;N&gt;</code> 代表一个数字, <code>&lt;char&gt;</code> 代表一个字符</p>
+</blockquote>
+<h3 id="退出-vim-编辑器"><a href="#退出-vim-编辑器" class="headerlink" title="退出 vim 编辑器"></a>退出 <code>vim</code> 编辑器</h3><ul>
+<li>在未改动文件的情况下: <code>q</code></li>
+<li>在改动过文件但未保存时: <code>q!</code>(强制退出)</li>
+</ul>
+<h3 id="从命令模式到插入模式的几种方式"><a href="#从命令模式到插入模式的几种方式" class="headerlink" title="从命令模式到插入模式的几种方式"></a>从命令模式到插入模式的几种方式</h3><ul>
+<li>在光标前: <code>i</code></li>
+<li>在光标后: <code>a</code></li>
+<li>光标下一行: <code>o</code></li>
+<li>光标上一行: <code>O</code></li>
+<li>光标所在行尾部: <code>A</code></li>
+</ul>
+<h3 id="从插入模式返回到命令模式"><a href="#从插入模式返回到命令模式" class="headerlink" title="从插入模式返回到命令模式"></a>从插入模式返回到命令模式</h3><ul>
+<li><code>ESC</code></li>
+<li><code>&lt;ctrl-[&gt;</code></li>
+<li><code>&lt;ctrl-c&gt;</code></li>
+</ul>
+<h3 id="保存相关"><a href="#保存相关" class="headerlink" title="保存相关"></a>保存相关</h3><ul>
+<li>文件存在或文件不存在但已指定文件名: <code>:w</code></li>
+<li>还原文件到上一次保存的状态: <code>:e!</code></li>
+<li>保存并退出<ul>
+<li><code>:wq</code></li>
+<li><code>:x</code></li>
+<li><code>ZZ</code>(命令模式下)</li>
+</ul>
+</li>
+<li>文件不存在且未指定文件名<ul>
+<li><code>:w &lt;filename&gt;</code></li>
+<li><code>:wq &lt;filename&gt;</code></li>
+<li><code>x &lt;filename&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><ul>
+<li>左下右上分别为: <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code></li>
+<li>移动到行首: <code>0</code></li>
+<li>移动到行尾: <code>$</code></li>
+<li>移动到行首第一个非空白符: <code>^</code></li>
+<li>移动到行尾第一个非空白符: <code>g_</code></li>
+<li>移动到下一个单词的开头: <code>w</code></li>
+<li>移动到下一个单词的结尾: <code>e</code></li>
+<li>移动到下一个单词的开头(紧挨在一起的非空白符识别为一个单词): <code>W</code></li>
+<li>移动到下一个单词的结尾(紧挨在一起的非空白符识别为一个单词): <code>E</code></li>
+<li>移动到相应代码块的对应括号: <code>%</code></li>
+<li>移动到光标所在行内查找到的字符的前一个字符, 向右查找: <code>t&lt;char&gt;</code></li>
+<li>移动到光标所在行内查找到的字符的前一个字符, 向左查找: <code>T&lt;char&gt;</code></li>
+</ul>
+<h3 id="删除相关"><a href="#删除相关" class="headerlink" title="删除相关"></a>删除相关</h3><ul>
+<li>删除当前光标所指字符: <code>x</code></li>
+<li>在本行内删除所有内容, 直到遇到指定字符: <code>dt&lt;char&gt;</code></li>
+</ul>
+<h3 id="查看帮助文档"><a href="#查看帮助文档" class="headerlink" title="查看帮助文档"></a>查看帮助文档</h3><ul>
+<li>进入帮助文档: <code>:help</code></li>
+<li>退出帮助文档, 返回编辑器: <code>:q</code></li>
+<li>退出帮助文档同时退出编辑器: <code>qa!</code></li>
+</ul>
+<h3 id="查找定位"><a href="#查找定位" class="headerlink" title="查找定位"></a>查找定位</h3><ul>
+<li>向下查找: <code>/&lt;text&gt;</code></li>
+<li>向上查找: <code>?&lt;text&gt;</code></li>
+<li>下一个: <code>n</code></li>
+<li>上一个: <code>N</code></li>
+<li>完整匹配光标当前所在的单词并查找下一个: <code>*</code></li>
+<li>完整匹配光标当前所在的单词并查找上一个: <code>#</code></li>
+<li>在光标所在行内查找字符, 向右查找: <code>f&lt;char&gt;</code></li>
+<li>在光标所在行内查找字符, 向左查找: <code>F&lt;char&gt;</code></li>
+<li>查找高亮: <code>:set hlsearch</code></li>
+</ul>
+<blockquote>
+<p>编辑器下方的 <code>/text</code> 或 <code>?text</code> 未消失说明还在查找状态, 在查找状态可选择查找下一个或上一个</p>
+</blockquote>
+<h3 id="撤销与重做"><a href="#撤销与重做" class="headerlink" title="撤销与重做"></a>撤销与重做</h3><ul>
+<li>撤销上一次操作: <code>u</code></li>
+<li>还原上一次撤销的操作: <code>&lt;ctrl-r&gt;</code></li>
+</ul>
+<h3 id="复制相关"><a href="#复制相关" class="headerlink" title="复制相关"></a>复制相关</h3><ul>
+<li>复制光标所在行: <code>yy</code></li>
+<li>剪切光标所在行: <code>dd</code></li>
+<li>在光标下一行插入一行并粘贴: <code>p</code></li>
+<li>将下一行的内容合并到本行: <code>J</code></li>
+</ul>
+<h3 id="对原有命令进行附加操作"><a href="#对原有命令进行附加操作" class="headerlink" title="对原有命令进行附加操作"></a>对原有命令进行附加操作</h3><ul>
+<li>重复上一个改变文本的命令: <code>.</code></li>
+<li>重复某个命令 <code>N</code> 次: <code>N&lt;command&gt;</code></li>
+<li>重复 <code>N</code> 次插入操作: <code>Ni&lt;text&gt;&lt;ctrl-c&gt;&lt;CR&gt;</code></li>
+</ul>
+<h3 id="跳转相关"><a href="#跳转相关" class="headerlink" title="跳转相关"></a>跳转相关</h3><ul>
+<li>跳转到第 <code>N</code> 行<ul>
+<li><code>&lt;N&gt;G</code></li>
+<li><code>:&lt;N&gt;</code></li>
+</ul>
+</li>
+<li>跳转到第一行: <code>gg</code></li>
+<li>跳转到最后一行: <code>G</code></li>
+</ul>
+<h2 id="四、vim-进阶使用"><a href="#四、vim-进阶使用" class="headerlink" title="四、vim 进阶使用"></a>四、vim 进阶使用</h2><h3 id="视图模式"><a href="#视图模式" class="headerlink" title="视图模式"></a>视图模式</h3><p>以字符为选择单位, 命令模式下键入 <code>v</code> 进入视图模式, 进入视图模式底部会显示 <code>-- VISUAL --</code></p>
+<ul>
+<li>选择双引号之间的内容, 但不包括引号本身: <code>vi&quot;</code></li>
+<li>选择双引号之间的内容, 包括引号本身: <code>va&quot;</code></li>
+<li>选择括号之间的内容, 但不包括括号本身: <code>vi)</code></li>
+<li>选择括号之间的内容, 包括括号本身: <code>va)&quot;</code></li>
+<li>… (只要是成对的符号都可以这样操作)</li>
+</ul>
+<h3 id="行视图模式"><a href="#行视图模式" class="headerlink" title="行视图模式"></a>行视图模式</h3><p>以行作为选择单位, 在命令模式下键入 <code>V</code> 进入行视图模式, 进入行视图模式底部会显示 <code>-- VISUAL LINE --</code></p>
+<h3 id="块视图模式"><a href="#块视图模式" class="headerlink" title="块视图模式"></a>块视图模式</h3><p>可以进行矩形(块)选择, <code>&lt;ctrl-v&gt;</code> 进入块视图模式, 进入块视图模式底部会显示 <code>-- VISUAL BLOCK --</code></p>
+<ul>
+<li>在块视图模式下键入 <code>I</code> 可以进入块插入模式, 可以对选择的块以行为单位进行批量插入</li>
+</ul>
+<h3 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h3><p>在插入模式下, 键入<code>&lt;ctrl-n&gt;</code>, <code>ctrl-p</code> 可以进行自动补全, <code>&lt;ctrl-n&gt;</code> 为选中下一个补全项, <code>&lt;ctrl-p&gt;</code> 为选中上一个补全项</p>
+<h3 id="快速缩进"><a href="#快速缩进" class="headerlink" title="快速缩进"></a>快速缩进</h3><p>进入视图模式后, 可以键入 <code>=</code> 将选中的内容自动缩进</p>
+<h3 id="多文件与分屏"><a href="#多文件与分屏" class="headerlink" title="多文件与分屏"></a>多文件与分屏</h3><ul>
+<li>上下分屏: <code>:sp</code></li>
+<li>左右分屏: <code>:vs</code></li>
+<li>在不同的分屏中跳转: <code>&lt;ctrl-w&gt;*2</code></li>
+<li>在本分屏中载入文件: <code>:b &lt;filename&gt;</code></li>
+</ul>
+<h2 id="五、vim-的配置文件"><a href="#五、vim-的配置文件" class="headerlink" title="五、vim 的配置文件"></a>五、vim 的配置文件</h2><h3 id="不同配置文件的位置与区别"><a href="#不同配置文件的位置与区别" class="headerlink" title="不同配置文件的位置与区别"></a>不同配置文件的位置与区别</h3><ul>
+<li>系统配置文件: <code>/etc/.vimrc</code></li>
+<li>用户配置文件: <code>~/.vimrc</code></li>
+</ul>
+<blockquote>
+<p>注意: 系统配置文件对所有用户生效, 用户配置文件仅对当前用户生效, 用户配置文件对于当前用户来说优先级较高, 所以在系统配置文件中我们一般只设置公共配置或不进行配置</p>
+</blockquote>
+<h2 id="六、vim-常用配置"><a href="#六、vim-常用配置" class="headerlink" title="六、vim 常用配置"></a>六、vim 常用配置</h2><h3 id="视觉相关"><a href="#视觉相关" class="headerlink" title="视觉相关"></a>视觉相关</h3><ul>
+<li>显示行号: <code>set number</code></li>
+<li>查找高亮: <code>set hlsearch</code></li>
+<li>成对匹配的符号高亮: <code>set showmatch</code></li>
+<li>当前行高亮: <code>set cursorline</code></li>
+<li>列高亮: <code>set colorcolumn=82</code>(个人习惯 82)</li>
+</ul>
+<h3 id="缩进相关"><a href="#缩进相关" class="headerlink" title="缩进相关"></a>缩进相关</h3><ul>
+<li>自动缩进: <code>set autoindent</code></li>
+<li>根据文件其他地方推测一个 tab 为几个空格: <code>set starttab</code></li>
+<li>缩进量: <code>set shiftwidth=2</code></li>
+<li>缩进及退格所缩进或删除的空格数: <code>set softtabstop=2</code></li>
+<li>使用空格缩进: <code>set expandtab</code></li>
+</ul>
+<h3 id="查找相关"><a href="#查找相关" class="headerlink" title="查找相关"></a>查找相关</h3><ul>
+<li>查找时忽略大小写: <code>set ignorecase</code></li>
+<li>输入搜索时就高亮显示: <code>set incsearch</code></li>
+</ul>
+<h2 id="七、vim-安装插件"><a href="#七、vim-安装插件" class="headerlink" title="七、vim 安装插件"></a>七、vim 安装插件</h2><h3 id="安装-coc-nvim"><a href="#安装-coc-nvim" class="headerlink" title="安装 coc.nvim"></a>安装 coc.nvim</h3><p>暂未开始</p>
+<h2 id="到此还未结束-本文档将不定时更新"><a href="#到此还未结束-本文档将不定时更新" class="headerlink" title="到此还未结束, 本文档将不定时更新"></a>到此还未结束, 本文档将不定时更新</h2><p><strong><em>written by jm</em></strong></p>
+
     </article>
     <!-- license -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="https://jm7603.github.io">JMing</a>
-            <p>原文链接：<a href="https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/">https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/</a>
-            <p>发表日期：<a href="https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/">五月 30日 2024, 10:02:39 晚上</a>
-            <p>更新日期：<a href="https://jm7603.github.io/CPP/vector%E5%92%8Citerator/e2dd58c9c350/">五月 30日 2024, 10:03:35 晚上</a>
+            <p>原文链接：<a href="https://jm7603.github.io/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/">https://jm7603.github.io/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/</a>
+            <p>发表日期：<a href="https://jm7603.github.io/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/">July 6th 2024, 9:28:12 pm</a>
+            <p>更新日期：<a href="https://jm7603.github.io/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/">July 6th 2024, 9:30:39 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -557,7 +719,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
     <script>
-        let idOption = '1717077759000'
+        let idOption = '1720272492000'
         
         const gitalk = new Gitalk({
             clientID: 'b0f5b0a3033c8084e83e',
@@ -701,7 +863,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%A2%84%E5%91%8A"><span class="toc-number">1.</span> <span class="toc-text">更新预告</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81vim-%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9"><span class="toc-number">1.</span> <span class="toc-text">一、vim 命令常用选项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81vim-%E7%9A%84%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">二、vim 的几种模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81vim-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">三、vim 的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BA-vim-%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">3.1.</span> <span class="toc-text">退出 vim 编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E5%88%B0%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">3.2.</span> <span class="toc-text">从命令模式到插入模式的几种方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F%E8%BF%94%E5%9B%9E%E5%88%B0%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.3.</span> <span class="toc-text">从插入模式返回到命令模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E7%9B%B8%E5%85%B3"><span class="toc-number">3.4.</span> <span class="toc-text">保存相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87"><span class="toc-number">3.5.</span> <span class="toc-text">移动光标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%9B%B8%E5%85%B3"><span class="toc-number">3.6.</span> <span class="toc-text">删除相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3"><span class="toc-number">3.7.</span> <span class="toc-text">查看帮助文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%AE%9A%E4%BD%8D"><span class="toc-number">3.8.</span> <span class="toc-text">查找定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%A4%E9%94%80%E4%B8%8E%E9%87%8D%E5%81%9A"><span class="toc-number">3.9.</span> <span class="toc-text">撤销与重做</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E7%9B%B8%E5%85%B3"><span class="toc-number">3.10.</span> <span class="toc-text">复制相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E5%8E%9F%E6%9C%89%E5%91%BD%E4%BB%A4%E8%BF%9B%E8%A1%8C%E9%99%84%E5%8A%A0%E6%93%8D%E4%BD%9C"><span class="toc-number">3.11.</span> <span class="toc-text">对原有命令进行附加操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BD%AC%E7%9B%B8%E5%85%B3"><span class="toc-number">3.12.</span> <span class="toc-text">跳转相关</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81vim-%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8"><span class="toc-number">4.</span> <span class="toc-text">四、vim 进阶使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.1.</span> <span class="toc-text">视图模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E8%A7%86%E5%9B%BE%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">行视图模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%97%E8%A7%86%E5%9B%BE%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.3.</span> <span class="toc-text">块视图模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8"><span class="toc-number">4.4.</span> <span class="toc-text">自动补全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E7%BC%A9%E8%BF%9B"><span class="toc-number">4.5.</span> <span class="toc-text">快速缩进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8E%E5%88%86%E5%B1%8F"><span class="toc-number">4.6.</span> <span class="toc-text">多文件与分屏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81vim-%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text">五、vim 的配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%8D%E7%BD%AE%E4%B8%8E%E5%8C%BA%E5%88%AB"><span class="toc-number">5.1.</span> <span class="toc-text">不同配置文件的位置与区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81vim-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">6.</span> <span class="toc-text">六、vim 常用配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E8%A7%89%E7%9B%B8%E5%85%B3"><span class="toc-number">6.1.</span> <span class="toc-text">视觉相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%A9%E8%BF%9B%E7%9B%B8%E5%85%B3"><span class="toc-number">6.2.</span> <span class="toc-text">缩进相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E7%9B%B8%E5%85%B3"><span class="toc-number">6.3.</span> <span class="toc-text">查找相关</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81vim-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-number">7.</span> <span class="toc-text">七、vim 安装插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-coc-nvim"><span class="toc-number">7.1.</span> <span class="toc-text">安装 coc.nvim</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B0%E6%AD%A4%E8%BF%98%E6%9C%AA%E7%BB%93%E6%9D%9F-%E6%9C%AC%E6%96%87%E6%A1%A3%E5%B0%86%E4%B8%8D%E5%AE%9A%E6%97%B6%E6%9B%B4%E6%96%B0"><span class="toc-number">8.</span> <span class="toc-text">到此还未结束, 本文档将不定时更新</span></a></li></ol>
             </div>
         
         <!-- sidebar -->
@@ -818,8 +980,8 @@
             
         
         <li class="archive-post-item">
-            <span class="archive-post-date">05/30</span>
-            <a class="archive-post-title" href="/CPP/vector%E5%92%8Citerator/e2dd58c9c350/">vector和iterator</a>
+            <span class="archive-post-date">07/06</span>
+            <a class="archive-post-title" href="/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/">vim快速入门</a>
         </li>
     
         
@@ -944,6 +1106,16 @@
                 迭代器
             </span>
         
+            <span class="sidebar-tag-name" data-tags="vim">
+                <span class="iconfont-archer">&#xe606;</span>
+                vim
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="linux">
+                <span class="iconfont-archer">&#xe606;</span>
+                linux
+            </span>
+        
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -973,6 +1145,11 @@
         <span class="sidebar-category-name" data-categories="CPP">
             <span class="iconfont-archer">&#xe60a;</span>
             CPP
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="vim">
+            <span class="iconfont-archer">&#xe60a;</span>
+            vim
         </span>
     
     </div>

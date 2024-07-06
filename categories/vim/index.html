@@ -22,7 +22,7 @@
     <meta name="description" content="法王的个人记录日常（非专业）">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JMing&#39;s Blog">
-<meta property="og:url" content="https://jm7603.github.io/categories/%E5%85%B6%E4%BB%96/index.html">
+<meta property="og:url" content="https://jm7603.github.io/categories/vim/index.html">
 <meta property="og:site_name" content="JMing&#39;s Blog">
 <meta property="og:description" content="法王的个人记录日常（非专业）">
 <meta property="og:locale" content="zh_CN">
@@ -445,41 +445,45 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/%E5%85%B6%E4%BB%96/MacOS%E4%BD%BF%E7%94%A8ssh%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/0981664a56f1/">
+            <a class="abstract-title" href="/vim/vim%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/52e805df7a4e/">
                 
-                <span class="abstract-title-text">MacOS使用ssh密钥连接远程服务器</span>
+                <span class="abstract-title-text">vim快速入门</span>
             </a>
             <div class="abstract-content">
-                一、在本地生成密钥1ssh-keygen -t rsa
+                一、vim 命令常用选项
+查看 vim 版本、配置文件位置及编译信息
+
+1vim --version
 
 
-一路回车就行了，ssh-keygen 在 MacOS 下会把密钥生成在 /User/用户名/.ssh 下
+打开或新编辑
 
-二、将公钥拷贝到服务器上1ssh-copy-id -i /User/用户名/.ssh/id_rsa.pub root@ip
-
-
-执行以上命令会要求验证，输入服务器密码就行了
-
-三、连接1ssh root@ip
+123vim             # 直接开始编辑(保存文件时需指定文件名)vim &lt;filename&gt;  # 打开已有文件或为新文件指定文件名(文件未保存时文件还不存在)vim &lt;filelist&gt;  # 打开多个文件
 
 
-可以愉快的使用了
+打开 vim 使用教程
 
+1vimtutor
 
+二、vim 的几种模式
+命令模式(Command mode): 进入 vim 编辑器默认为此模式, 在该模式下, 键入的字符会被识别为命令
+插入模式(Insert mod...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/06">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/04/06</span>
+                <div class="abstract-date" title="Last updated: 2024/07/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/07/06</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="ssh">ssh</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="vim">vim</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="linux">linux</a>
     
 </div>
 
